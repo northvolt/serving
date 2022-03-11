@@ -5,6 +5,7 @@ import "tensorflow_serving/util/status.proto";
 
 package tensorflow.serving;
 option cc_enable_arenas = true;
+option go_package = "github.com/tensorflow/serving/tensorflow_serving/apis/model_management_go_proto";
 
 message ReloadConfigRequest {
   ModelServerConfig config = 1;
